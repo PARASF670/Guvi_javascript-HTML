@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input[type=text],textarea,input[type=email] {
+        input[type=text],input[type=email] {
   width: 30%;
   padding: 6px;
     border-radius: 4px;
@@ -15,14 +15,32 @@
   margin-bottom: 16px;
   resize: vertical;
 }
+textarea{
+    margin-top: 30px;
+    margin-left: 10px;
+    padding-right: 30px;
+    width: 250px;
+    outline-style: solid;
+    outline-width: thin;
+  
+}
         .up,.frm{
             text-align:center;
             padding:0px 0px;
         }
         .frm{
             border-radius: 5px;
+            margin-top: 80px;
+            margin-bottom: 150px;
+            margin-left: 290px;
+            margin-right: 100px;
             background-color: #7fddd759;
-            padding: 20px;
+            padding-bottom: 150px;
+            height: 400px;
+            width: 550px;
+            outline-style: solid;
+            outline-color:#34c0b7;
+            outline-width: thin;
         }
         
         body {
@@ -50,16 +68,16 @@
         <h6>We will get back to you asap</h6>
         </div>
     <form action="demo.html">
-        <label for="fname">First Name</label>
+        <label for="fname">First Name  </label>
         <input type="text" id="fname" name="fm" placeholder="First Name"><br>
-        <label for="lname">Last Name</label>
+        <label for="lname">Last Name   </label>
         <input type="text" id="lname" name="lm" placeholder="Last Name"><br>
-        <label for="mail">Email</label>
+        <label for="mail">Email   </label>
         <input type='email'id="mail" name='mail'placeholder='xyz@gmail.com'><br>
-        <label for="phone">Phone</label>
+        <label for="phone">Phone   </label>
         <input type="text"phone" name='phoneno'placeholder='Contact no'><br>
-        <label for="query">Any Query ?</label><br>
-        <textarea id="query" name='subject' placeholder="Write something.." style="height: 200px ;"></textarea><br>
+        <label for="query">Any Query ?   </label><br>
+        <textarea id="query" name='subject' placeholder="Write something.." style="height: 150px;"></textarea><br>
         <input type="submit" value="Submit">
 
     </form>
