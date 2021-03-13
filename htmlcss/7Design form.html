@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+            
+            border:0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 2px solid;
+            margin-left: 10px;
+            font-style: italic;
+            font-weight: bold;
+        
+            
+        }
+        .fom{
+            height:262px;
+            width:400px;
+            outline-style: solid;
+            outline-width: 3px;
+            padding-top:0.5px;
+            
+        }
+        label{
+            margin-left: 10px;
+            font-size: 11px;
+            margin-right: 120px;
+            font-weight: bold;
+            
+        }
+        .ad{
+width: 355px;
+        }
+        .city{
+width: 80px;
+        }
+        .state{
+width: 80px;
+margin-right: 30px;
+
+        }
+        .zip{
+width: 100px;
+margin-right: 50px;
+        }
+        .chk{
+            margin-left: 22px;   
+        }
+    </style>
+</head>
+<body>
+    <div class="fom">
+        <h3 style="text-align: center; background:rgb(236, 57, 26);margin-left: 10px;margin-right: 30px;color: white;margin-bottom: 5px;">Yes! I want to subscribe to <strong style="font-style:italic;">Mag-O-Zine</strong></h3>
+        <input type="text" id="fn">
+        <input type="text" id="ln"><br>
+        <label for id="fn">First Name</label>
+        <label for id="ln">Last Name</label>
+        <input type="text" class="ad" id="add">
+        <label for id="add">Address</label><br>
+        <input type="text" class="city">
+        <input type="text" class="state">
+        <input type="text" class="zip">
+        <label style="margin-right: 60px; padding-bottom: 5px;">City</label>
+        <label style="margin-right: 90px;">State</label>
+        <label>Zip</label><br>
+        <strong style="margin-left: 10px;">Subscribe for:</strong>
+        <input type="checkbox" name:"subs" value:"1y" id="one" style="margin-right: 0px;">
+        <label for="one" style="font-size:medium;margin-right:2px;">1 year($19.95)</label>
+        <input type="checkbox" name:"subs" value:"2y" id="two">
+        <label for="two" style="font-size:medium;margin-right:2px;">2 years($35.00)</label>
+        <strong style="margin-left: 10px;">Send me more information about:</strong><br>
+        <input type="checkbox" name:"information" value:"A" id="a" class="chk">
+        <label for="one" style="font-size:medium;margin-right:2px;">Computer-Zine</label><br>
+        <input type="checkbox" name:"information" value:"B" id="b" class="chk">
+        <label for="one" style="font-size:medium;margin-right:2px;">Fishing-Zine</label><br>
+        <input type="checkbox" name:"information" value:"C" id="c" class="chk">
+        <label for="one" style="font-size:medium;margin-right:2px;">Cat-O-Zine</label><br>
+        
+    </div>
+    
+</body>
+</html>
