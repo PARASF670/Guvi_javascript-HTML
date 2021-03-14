@@ -9,6 +9,9 @@
         table,th,td,tr{
             border: 2px solid;
             border-collapse:collapse;
+            padding: 10px;
+            font-weight: bold;
+            
         
         }
         td{
@@ -19,33 +22,34 @@
 </head>
 <body>
     <table>
-        <tr>
-            <th>State of health</th>
-            <th colspan="2">Fasting</th>
-            <th>After Remaining</th>
+        <caption style="margin-bottom: 10px;">Health Chart</caption>
+        <tr >
+            <th rowspan="2">State of Health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Eating</th>
         </tr>
         <tr>
-            <th></th>
+            
             <th>Minimum</th>
-            <th>Normal</th>
-            <th>2 hours of Eating</th>
+            <th>Maximum</th>
+            <th>2 hours after Eating</th>
         </tr>
         <tr>
-            <td>healthy</td>
+            <td>Healthy</td>
             <td>70</td>
             <td>100</td>
             <td>Less than 140</td>
         </tr>
         <tr>
-            <td>PreDiabetes</td>
+            <td>Pre-Diabetes</td>
             <td>101</td>
             <td>126</td>
             <td>140 to 200</td>
         </tr>
         <tr>
             <td>Diabetes</td>
-            <td>more than 126</td>
-            <td>Not applicable</td>
+            <td>More than 126</td>
+            <td>N/A</td>
             <td>More than 200</td>
         </tr>
     </table>
