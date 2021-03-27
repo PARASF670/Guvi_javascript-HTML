@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/dca815a438.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
+        
         .head{
             /* position:relative; */
             width: 80%;
@@ -56,8 +57,8 @@
           }  
         
        
-        body{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        body,p{
+            font-family: 'Gill Sans MT';
         }
         #small-head{
             height: 40px;
@@ -71,7 +72,7 @@
         }
         #info{
             margin:auto;
-            width: 70%;
+            width: 80%;
             
             
         }
@@ -81,8 +82,33 @@
             background-clip: padding-box;
             
         }
-        tbody >th{
-
+       th{
+           text-align: left;
+       }
+       #data1{
+         border-right: 2px solid rgba(33, 34, 36, 0.884);  
+         padding-left: 50px;
+         padding-right: 30px;
+         width: 50%;
+       }
+        #mini{
+            color: orange;
+            padding: 12px;
+            
+        }
+        #data2{
+            width: 50%;
+             padding-left: 30px;
+            padding-right: 50px;
+        }
+        p{
+            
+            padding-left: 55px;
+            color: rgba(33, 34, 36, 0.884);
+            font-size:large;
+        }
+        .content{
+            text-align:start;
         }
     </style>
 </head>
@@ -104,14 +130,200 @@
 </thead>
 <tbody>
 <tr>
-    <th id="data1" > <div id="small-logo" class="logo"></div>
+    <th id="data1" > <span id="small-logo" class="logo">
+        <i id="mini" class="fas fa-user"></i>
+    </span><p>
     Profile
+    </p>
+    </th>
+    <th id="data2" > <span id="small-logo" class="logo">
+        <i id="mini" class="fas fa-user"></i>
+    </span><p>
+    Work Experience
+    </p>
     </th>
     
 </tr>
 <tr>
-    <td>Innovative optimmized solution seeker.Excited to be at the deployment</td>
-<td>Community relation manager</td>
+    <td id="data1">Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated and an alliteration advocate.</td>
+<td id="data2" rowspan="3"> <b>Customer Relation <br>
+    Manager <br></b>
+    Gay & Lesbian Elder Housing, Los Angeles
+    <ul>
+        <li>
+          Arranging presentations and pitch deck.
+        </li>
+        <li>
+          Designing a PR plan and establishing important focus points.
+        </li>
+        <li>
+          Designing, creating and managing content across multiple communication platforms.
+        </li>
+        <li>Building relationships with key media players.</li>
+    </ul>
+    <span id="small-logo" class="logo">
+        <i style=" display: inline;"id="mini" class="fas fa-user"></i>
+    
+     <b id="data2" style=" padding-left: 43px; padding-bottom:60px; ">
+        Education</b>
+        
+    </span><br><br><br>
+    <b>Education Immersion <br>
+        Program <br></b>
+        Thinkful, Chicago, IL<br><br>
+        Project-focused intensive program with emphasis on mongo, Express, React, and JavaScript (MERN) technical stack.
+        <ul>
+            <li>
+             Developed a full-stack web application, "RenewU", using React that allows users to explore various aspects of meditation. User's progress is stored on a backend created using Node and MongoDB.
+            </li>
+            <li>
+             Developed a language learning app, "Foodie Phonetics" using spaced repetition and a linked list data structure. React was used to create the front end components while Node and Mongo were used to create a backend that stores user data
+            </li>
+            <li>
+             Developed a concierge app, "Pley", for individuals looking for curated suggestions when visiting a new place. React was used to develop the front end which includes real-time chat, drag and drop and variety of advanced features. The backend, built using Node, Express, and Mongo, takes advantage of well-developed RESTful API, Geospatial searching, and user authentication with JWT.
+            </li>
+        </ul>
+        <span style="font-weight: bolder">BA, English </span>
+       <span style="float:right;">09/2001-09/2005</span>
+       <br>
+       University of California, Los Angles
+</td>
+</tr>
+<tr>
+    <th id="data1" > <span id="small-logo" class="logo">
+        <i id="mini" class="fas fa-user"></i>
+    </span><p>
+    Skills
+    </p>
+    <table>
+        
+        <tr>
+            <td>
+                JAVASCRIPT
+            </td>
+            <td>
+                <input type="range" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                HTML
+            </td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CSS
+            </td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                React
+            </td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Redux
+            </td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Mongo
+            </td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Deployment
+            </td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+    </table>
+    <br> <br>
+    <table>
+        
+        <caption style="font-weight: bolder;">Additional Skills </caption>
+        
+        <tr>
+            <td>Project</td>
+            <td><input type="range"></td>
+        </tr>
+        <tr>
+           <td>Management</td>
+           <td><input type="range"></td>
+       </tr>
+   
+       <tr>
+           <td>Recruitment</td>
+           <td><input type="range"></td>
+       </tr>
+   
+       <tr>
+           <td>Business</td>
+           <td><input type="range"></td>
+       </tr>
+   
+       <tr>
+           <td>Development</td>
+           <td><input type="range"></td>
+       </tr>
+   
+       <tr>
+           <td>Editing</td>
+           <td><input type="range"></td>
+       </tr>
+   
+       <tr>
+           <td>Fundraising</td>
+           <td><input type="range"></td>
+       </tr>
+   
+   
+       </table>
+    
+</tr>
+<tr>
+    <th id="data1" > <span id="small-logo" class="logo">
+        <i id="mini" class="fas fa-user"></i>
+    </span><p>
+    Work Experience
+    </p>
+    
+    </th>
+</tr>
+<tr>
+    <td id="data1">
+        <b>Event Manager</b> <br>
+    
+        Thinkful, Chicago, IL<br>
+        <ul>
+            <li>
+                Lead and execute all phases of event planning and production spanning committe recruitment, training, vendor relationships and on-site facilitation.
+            </li>
+            <li>
+                Brought new business to the organization through relentless networking and stewardship which helped the company win the bid for the State Department Summit on the Middle East and, the companies largest civic event to date, the United State of Women.
+            </li>
+            <li>
+                Exercise fiscal control over budget creation, tracking and reporting.Collaborate with employees at all organization levels to advance cohesive operations.
+            </li>
+            
+        </ul>
+    </td>
 </tr>
 </tbody>
 
