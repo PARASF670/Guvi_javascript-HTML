@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="naam">name</label><br>
+        <input id="naam" type="text">
+    </div>
+    <div>
+        <label for="mail">Email</label><br>
+        <input id="mail"type="email">
+    </div>
+    <div>
+        <label for="mob">Mobile</label><br>
+        <input id="mob"type="text">
+    </div>
+    <br><button type="submit" id="btn">Click</button>
+<script>
+var count=0;
+var t=document.getElementById('btn');
+t.addEventListener('click',foo1);
+function foo1(){
+    ++count;
+if(count==1){
+    var tab=document.createElement("TABLE");
+    tab.setAttribute("id", "myTable");
+    tab.setAttribute("border","2");
+    document.body.appendChild(tab);
+}
+if(count>=1){
+    var row = tab.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  cell1.innerHTML = document.getElementById('naam').value;
+  cell2.innerHTML = document.getElementById('mail').value;
+  cell3.innerHTML = document.getElementById('mob').value;
+
+}
+}
+</script>
+</body>
+</html>
