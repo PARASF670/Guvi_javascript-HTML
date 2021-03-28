@@ -55,7 +55,10 @@
             margin-left:43%;
             
           }  
-        
+        .edu{
+            /* padding-top:15px; */
+            position: absolute;
+        }
        
         body,p{
             font-family: 'Gill Sans MT';
@@ -110,6 +113,30 @@
         .content{
             text-align:start;
         }
+        input[type='range']
+        {
+            -webkit-appearance: none;
+            margin-left: 60px;
+            background: #d3d3d3;
+            width:220px;
+            height: 9px;
+            opacity: 0.5;
+        }
+        input[type='range']:hover{
+            opacity: 1;
+        }
+        input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* appearance: none; */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background:white;
+  border: 1px solid rgba(33, 34, 36, 0.884);
+  cursor:pointer;
+  
+}
+
     </style>
 </head>
 <body>
@@ -137,17 +164,19 @@
     </p>
     </th>
     <th id="data2" > <span id="small-logo" class="logo">
-        <i id="mini" class="fas fa-user"></i>
+        <i id="mini" class="fas fa-briefcase"></i>
     </span><p>
     Work Experience
+    
     </p>
+    
     </th>
     
 </tr>
 <tr>
     <td id="data1">Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated and an alliteration advocate.</td>
 <td id="data2" rowspan="3"> <b>Customer Relation <br>
-    Manager <br></b>
+    Manager  <span style="float:right">06/2011-01/2014</span> <br> </b>
     Gay & Lesbian Elder Housing, Los Angeles
     <ul>
         <li>
@@ -162,14 +191,14 @@
         <li>Building relationships with key media players.</li>
     </ul>
     <span id="small-logo" class="logo">
-        <i style=" display: inline;"id="mini" class="fas fa-user"></i>
-    
-     <b id="data2" style=" padding-left: 43px; padding-bottom:60px; ">
+        <i id="mini" class=" edu fas fa-graduation-cap"></i>
+    <br>
+     <b id="data2" style=" color: rgba(33, 34, 36, 0.884); padding-left: 48px;  ">
         Education</b>
         
     </span><br><br><br>
     <b>Education Immersion <br>
-        Program <br></b>
+        Program <span style="float:right;">11/2018-06/2018</span> <br></b>
         Thinkful, Chicago, IL<br><br>
         Project-focused intensive program with emphasis on mongo, Express, React, and JavaScript (MERN) technical stack.
         <ul>
@@ -184,19 +213,20 @@
             </li>
         </ul>
         <span style="font-weight: bolder">BA, English </span>
-       <span style="float:right;">09/2001-09/2005</span>
+       <span style="float:right; font-weight: bold;">09/2001-09/2005</span>
        <br>
        University of California, Los Angles
 </td>
 </tr>
 <tr>
     <th id="data1" > <span id="small-logo" class="logo">
-        <i id="mini" class="fas fa-user"></i>
+        <i id="mini"class="fas fa-flask"></i>
     </span><p>
     Skills
     </p>
+    
     <table>
-        
+        <caption style="font-weight: bolder; padding-left: 70px;">Technical Skills </caption>
         <tr>
             <td>
                 JAVASCRIPT
@@ -257,7 +287,7 @@
     <br> <br>
     <table>
         
-        <caption style="font-weight: bolder;">Additional Skills </caption>
+        <caption style="font-weight: bolder;padding-left: 70px;">Additional Skills </caption>
         
         <tr>
             <td>Project</td>
@@ -299,8 +329,8 @@
 </tr>
 <tr>
     <th id="data1" > <span id="small-logo" class="logo">
-        <i id="mini" class="fas fa-user"></i>
-    </span><p>
+        <i id="mini" class="fas fa-briefcase"></i>
+    </span><p style="display: inline-block;">
     Work Experience
     </p>
     
@@ -308,7 +338,7 @@
 </tr>
 <tr>
     <td id="data1">
-        <b>Event Manager</b> <br>
+        <b>Event Manager <span style="float:right; padding-top: 18px;">03/2014-2017</span> </b> <br>
     
         Thinkful, Chicago, IL<br>
         <ul>
