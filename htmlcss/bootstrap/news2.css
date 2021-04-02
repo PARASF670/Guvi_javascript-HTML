@@ -1,0 +1,77 @@
+.container{
+    background-color:white;
+}
+span{
+    font-weight: bold;
+    font-style: italic;
+   
+}
+.upr{
+    border-bottom: 2px solid black;
+}
+.pad{
+    margin-bottom: 35px;
+}
+.mar{
+    margin-right: 0px;
+}
+.low{
+    border-top: 2px solid black;
+}
+.rp{
+    font-weight: bold;
+    color: red;
+    font-size:18px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.banner{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(128, 0, 0);
+    color:white ;
+    font-style: italic;
+    font-weight: 14px;
+    padding: 3px;
+    font-size: smaller;
+    
+
+}
+.dyn{
+    position: absolute;
+    top: -15px;
+}
+*{
+    text-align: justify;
+}
+.logo{
+    display: inline;
+    width: 53px;
+    height: 53px;
+    background-color: rgba(0, 255, 179, 0.966);
+    border-radius: 50%;
+   
+    /* z-index: 1; */
+    position: absolute;
+}
+.pos{
+    
+    top: 70%;
+    left: 80%;
+}
+.lgtext{
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    /* font-size: 5px; */
+}
+.pos1{
+    top:30%;
+    left: 80%;
+}
+.pos2{
+    top:30%;
+    left: 87%;
+}
