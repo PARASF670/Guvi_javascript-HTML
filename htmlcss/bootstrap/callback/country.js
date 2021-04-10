@@ -1,6 +1,8 @@
 par = document.createElement('div');
 par.setAttribute("class", "container");
 raw = document.createElement('row');
+col=document.createElement('div');
+col.setAttribute("class", "col-lg-4 col-sm-12");
 document.body.style.backgroundColor = "lightblue";
 
 
@@ -28,8 +30,7 @@ fetch('https://restcountries.eu/rest/v2/all')
     })
 
 function createcard(name, flag, capital, region, code, latitude) {
-        col=document.createElement('div');
-        col.setAttribute("class", "col-lg-4 col-sm-12");
+        
         card=document.createElement('div');
         card.setAttribute("class", "card");
         chead= document.createElement('div');
