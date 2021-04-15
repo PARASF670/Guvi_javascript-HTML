@@ -1,9 +1,11 @@
+
+
+document.body.style.backgroundColor = "lightblue";
 par = document.createElement('div');
 par.setAttribute("class", "container");
-raw = document.createElement('row');
-col=document.createElement('div');
-col.setAttribute("class", "col-lg-4 col-sm-12");
-document.body.style.backgroundColor = "lightblue";
+raw = document.createElement('div');
+raw.setAttribute("class", "row");
+        par.append(raw);
 
 
 fetch('https://restcountries.eu/rest/v2/all')
@@ -11,6 +13,7 @@ fetch('https://restcountries.eu/rest/v2/all')
         return res.json();
     })
     .then((result) => {
+       
         for (i in result) {
             
             var Capital = result[i].capital;
@@ -21,6 +24,9 @@ fetch('https://restcountries.eu/rest/v2/all')
             var LatLng = result[i].latlng;
             
             createcard(Name, Flag, Capital, Region, Country_code, LatLng);
+            // raw.append(col);
+            // par.append(raw);
+            // document.body.append(par);
             
         }
         
@@ -30,8 +36,9 @@ fetch('https://restcountries.eu/rest/v2/all')
     })
 
 function createcard(name, flag, capital, region, code, latitude) {
-        
-        card=document.createElement('div');
+    col=document.createElement('div');
+col.setAttribute("class", "col-lg-4 col-sm-12");
+                card=document.createElement('div');
         card.setAttribute("class", "card");
         chead= document.createElement('div');
     chead.setAttribute("class", "card-header");
@@ -58,8 +65,8 @@ function createcard(name, flag, capital, region, code, latitude) {
         cbody.append(image,content, para1, para2,btn);
         card.append(chead,cbody);
         col.append(card);
-        raw.appendChild(col);
-        par.append(raw);
+        raw.append(col);
+        
     document.body.append(par);
     btn.setAttribute("id", code);
     document.getElementById(code).addEventListener("click", function () {
