@@ -33,16 +33,17 @@ span{
     color:white ;
     font-style: italic;
     font-weight: 14px;
-    padding: 3px;
+    padding: 5px;
     font-size: smaller;
     
 
 }
 .dyn{
     position: absolute;
-    top: -15px;
+    top: -7px;
+    
 }
-*{
+body{
     text-align: justify;
 }
 .logo{
@@ -68,8 +69,8 @@ span{
     /* font-size: 5px; */
 }
 .pos1{
-    top:30%;
-    left: 80%;
+    top:35%;
+    left: 60%;
 }
 .pos2{
     top:30%;
