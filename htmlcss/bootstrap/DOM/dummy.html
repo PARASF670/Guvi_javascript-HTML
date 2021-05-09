@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var div=document.createElement('div');
+        div.setAttribute('class','container');
+        var row=document.createElement('div');
+        row.setAttribute('class','row');
+        var col=document.createElement('div');
+        col.setAttribute('class','col1');
+        col.innerHTML="hlo"
+       row.append(col);
+       div.append(row);
+       document.body.append(div);
+
+        </script>
+</body>
+</html>
