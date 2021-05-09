@@ -23,6 +23,12 @@ card_header.append(output_label, input);
 var cardbody = document.createElement('div');
 cardbody.className = "card-body";
 cardbody.style.backgroundColor = 'rgb(221,220,220)';
+
+Button('C', '#DC3545', 'white');
+Button('DL', '#DC3545', 'white');
+Button('=','#28A745','white');
+
+Button('.','orange','white');
 Button('7','#343A40','white');
 Button('8','#343A40','white');
 Button('9','#343A40','white');
@@ -35,10 +41,11 @@ Button('1','#343A40','white');
 Button('2','#343A40','white');
 Button('3','#343A40','white');
 Button('*', 'orange', '#343A40');
-Button('C','#DC3545','white');
 Button('0','#343A40','white');
-Button('=','#28A745','white');
-Button('/','orange','#343A40');
+Button('00', '#343A40', 'white');
+Button('%','orange','#343A40');
+Button('/', 'orange', '#343A40');
+
 
 function Button(data,bcolor,btext) {
 var b = document.createElement("button");
@@ -59,7 +66,7 @@ var b = document.createElement("button");
         b.style.opacity = "1";
     }
     
-    if (data !== '=' && data !=='C') {
+    if (data !== '=' && data !=='C' && data !='DL') {
         b.addEventListener('click', function () {
             document.getElementById('output').innerText  = document.getElementById('output').innerText + data;
         })
@@ -76,12 +83,18 @@ var b = document.createElement("button");
             document.getElementById('input1').value = eval(fvalue);    
         })
     }
+    if (data == 'DL') {
+        b.addEventListener('click', function () {
+            var p = document.getElementById('output').innerText.length;
+            
+            if (p >= 1)
+                document.getElementById('output').innerText = document.getElementById('output').innerText.slice(0, p - 1);
+           
+        })
+    }
   
     cardbody.append(b);
 }
-
-
-
 
 card.append(card_header, cardbody);
 container.append(card);
